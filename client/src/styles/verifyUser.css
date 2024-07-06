@@ -1,0 +1,10 @@
+
+.loading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-size: 2rem;
+    font-family: Arial, sans-serif;
+    color: #333;
+  }

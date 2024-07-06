@@ -1,0 +1,111 @@
+.review-container {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 50px;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #ff0;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .user-reviews-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .user-reviews-list li {
+    margin: 10px 0;
+    padding: 10px;
+    background-color: #333;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  .user-reviews-list li strong {
+    display: block;
+    margin-bottom: 5px;
+    flex-basis: 100%;
+  }
+  
+  .review-form {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* width: 100%; */
+  }
+  
+  .review-form .input-group {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    gap: 10px;
+  }
+  
+  .review-form select,
+  .review-form input[type="number"],
+  .review-form textarea {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    font-size: 16px;
+  }
+  
+  .review-form select,
+  .review-form input[type="number"] {
+    flex: 1;
+  }
+  
+  .review-form textarea {
+    width: 100%;
+    height: 100px;
+    resize: none;
+    margin: 10px 0;
+  }
+  
+  .review-form button {
+    padding: 10px 20px;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+  .review-form button:hover {
+    background-color: #45a049;
+  }
+  
+  @media (max-width: 768px) {
+    .review-container {
+      padding: 10px;
+    }
+  
+    .user-reviews-list li {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .user-reviews-list li button {
+      align-self: flex-end;
+    }
+
+    .user-reviews-list li strong {
+        display: block;
+        margin-bottom: 5px;
+        flex-basis: 100%;
+        color: #ff0; 
+      }
+  
+    .review-form .input-group {
+      flex-direction: column;
+      gap: 10px;
+    }
+  }
+  

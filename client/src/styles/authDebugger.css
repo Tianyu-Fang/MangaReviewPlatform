@@ -1,0 +1,38 @@
+.auth-debugger-container {
+    background: rgba(0, 0, 0, 0.8); 
+    padding: 20px;
+    border-radius: 8px;
+    color: #fff;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    overflow-wrap: break-word; 
+  }
+  
+  .auth-debugger-container h1 {
+    margin-bottom: 20px;
+  }
+  
+  .auth-debugger-container pre {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 10px;
+    border-radius: 8px;
+    text-align: left; 
+    max-width: 100%;
+    overflow-x: auto;
+  }
+  
+  .auth-debugger-container p {
+    font-weight: bold;
+  }
+  
+  @media (min-width: 768px) {
+    .auth-debugger-container {
+      padding: 40px;
+    }
+  
+    .auth-debugger-container h1 {
+      font-size: 2rem;
+    }
+  }
+  

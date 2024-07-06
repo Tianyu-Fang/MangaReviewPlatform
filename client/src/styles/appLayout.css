@@ -1,0 +1,170 @@
+:root {
+  --color1: #001219;
+  --color2: #005f73;
+  --color3: #3d9397;
+  --color4: #94d28d;
+  --color5: #e9d8a6;
+  --color6: #ee9800;
+  --color7: #ca6702;
+  --color8: #bb3e03;
+  --color9: #ae2012;
+  --color10: #9b2226;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.title {
+  text-align: center;
+}
+
+.title h1 {
+  color: #FFD700; 
+  text-align: center;
+  font-size: 3em;
+  margin: 20px 0;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); 
+}
+
+.header {
+  width: 100%;
+  background-color: #8001a3;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  /* padding: 10px; */
+}
+
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  flex: 1;
+}
+
+.menu-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin: 0;
+  flex: 1;
+}
+
+.menu-list li {
+  margin: 0 80px;
+}
+
+.menu-list li a {
+  text-decoration: none;
+  font-size: 1.2rem;
+  color: white;
+  display: block;
+  padding: 0.5rem;
+  text-align: center;
+  /* background-color: var(--color10); */
+  border-radius: 5px;
+  flex-grow: 1;
+  text-align: center;
+}
+
+.menu-list li a:hover {
+  background-color: var(--color1);
+  color: var(--color5);
+}
+
+
+
+.user-info {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.user-avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.weather-logout-container {
+  display: flex;
+  align-items: center;
+}
+
+.weather-info {
+  text-align: center;
+  background-color: #f0f0f0;
+  padding: 10px;
+  border-radius: 5px;
+  width: 300px;
+  margin-right: 10px;
+}
+
+.weather-info p {
+  margin: 5px 0;
+}
+
+.exit-button {
+  background-color: #ff4b5c;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.content {
+  width: 100%;
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .menu {
+    justify-content: center;
+  }
+
+  .menu-list li {
+    margin: 5px 0;
+  }
+
+  .weather-logout-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .exit-button {
+    margin-top: 10px;
+  }
+
+  .weather-info {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .menu-list li a {
+    font-size: 1rem;
+  }
+
+  .user-avatar {
+    width: 40px;
+    height: 40px;
+  }
+
+  .weather-info {
+    width: 100%;
+  }
+}

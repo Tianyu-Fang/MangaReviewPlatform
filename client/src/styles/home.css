@@ -1,0 +1,198 @@
+/* src/components/Home.css */
+
+body, html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-image: url('../image/background/jujutsu_cover.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #171616;
+}
+
+.home-container {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  font-family: Arial, sans-serif;
+  color: #fff;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+  background: rgba(0, 0, 0, 0.8);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.844); 
+}
+
+.home-container h1,
+.home-container h2 {
+  text-align: center;
+  color: #ff0;
+}
+
+.reviews-list,
+.user-reviews-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.reviews-list li,
+.user-reviews-list li {
+  background: rgba(0, 0, 0, 0.7);
+  border: 1px solid #ddd;
+  padding: 20px;
+  margin: 10px 0;
+  border-radius: 4px;
+  color: #fff;
+  position: relative;
+}
+
+.review-date {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-size: 0.9rem;
+  color: #ff0;
+  font-weight: bold;
+}
+
+.review-comment {
+  margin-top: 20px;
+}
+
+.review-form {
+  margin-top: 20px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background: rgba(255, 255, 255, 0.9);
+  color: #000;
+}
+
+.review-form select,
+.review-form input[type="number"],
+.review-form textarea,
+.review-form input[type="text"],
+.review-form button {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.review-form button {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.review-form button:hover {
+  background-color: #218838;
+}
+
+.mangas-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  list-style-type: none;
+  padding: 0;
+}
+
+.mangas-list li {
+  margin: 20px;
+  text-align: center;
+}
+
+.mangas-list img {
+  display: block;
+  margin: 0 auto 10px;
+  width: 200px;
+  height: auto;
+}
+
+.auth-buttons {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.auth-buttons button {
+  margin: 0 10px;
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+  .home-container {
+    padding: 10px;
+    max-width: 600px;
+  }
+
+  .reviews-list li,
+  .user-reviews-list li {
+    padding: 8px;
+    margin: 8px 0;
+  }
+
+  .review-form select,
+  .review-form input[type="number"],
+  .review-form textarea,
+  .review-form input[type="text"],
+  .review-form button {
+    padding: 8px;
+  }
+
+  .mangas-list li {
+    margin: 10px;
+  }
+
+  .mangas-list img {
+    width: 150px;
+  }
+
+  .auth-buttons button {
+    margin: 5px;
+    padding: 8px 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .home-container {
+    padding: 5px;
+    max-width: 100%;
+  }
+
+  .reviews-list li,
+  .user-reviews-list li {
+    padding: 6px;
+    margin: 6px 0;
+  }
+
+  .review-form select,
+  .review-form input[type="number"],
+  .review-form textarea,
+  .review-form input[type="text"],
+  .review-form button {
+    padding: 6px;
+  }
+
+  .mangas-list li {
+    margin: 5px;
+  }
+
+  .mangas-list img {
+    width: 120px;
+  }
+
+  .auth-buttons button {
+    margin: 3px;
+    padding: 6px 10px;
+  }
+
+  .auth-buttons p {
+    margin-top: 20px;
+    font-size: 10rem; 
+    font-weight: bold;
+    text-align: center;
+    color: #ff0;
+  }
+  
+}
